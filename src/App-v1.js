@@ -57,7 +57,7 @@ export default function App() {
   const [watched, setWatched] = useState([]);
 
   useEffect(function () {
-    fetch(`http://www.omdbapi.com/?apikey=${KEY}&s=interstellar`).then((res) =>
+    fetch(`http://www.omdbapi.com/?apikey=${KEY}&s=toofan`).then((res) =>
       res.json().then((data) => setMovies(data.Search))
     );
   }, []);
